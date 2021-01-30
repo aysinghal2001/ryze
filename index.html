@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ryze</title>
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="styles.css">
     <!-- favicon link -->
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <!-- poppins font -->
@@ -26,6 +24,8 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
     <!-- JQuery -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Bootstrap tooltips -->
@@ -45,10 +45,11 @@
   <section id="home">
     <nav class="navbar navbar-expand-lg navbar-static-top" style="background-color: #fff;">
         <div class="container">
+          <img class="navbar-brand wow animated fadeInDown" src="images/Ryze-logo.svg" alt="">
             <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <img class="navbar-brand wow animated fadeInDown" src="images/Ryze-logo.svg" alt="">
+              
             
               <div class="collapse navbar-collapse" id="navbar">
                 <ul class="navbar-nav ml-auto mt-2 mt-lg-0 nav-fill w-100">
@@ -71,16 +72,17 @@
       <div class="container" style="margin-top: 10%;">
         <div class="row">
             <div class="col-lg-7 col-md-12 col-sm-12 wow animated bounceInRight">
-              <h1>Hire Skilled Student <br></h1>
-              <h1 class="typewrite home-heading" style="margin-bottom: 3rem;" data-period="2000" data-type='[ "Front-End Developer", "Backend Developer", "Web Developer", "App Developer" ]'>
+              <div id="container">
+                <div class="home-heading" id="text"></div>
+              </div>
+              <!-- <h1 class="typewrite home-heading" style="margin-bottom: 3rem;" data-period="2000" data-type='[ "Front-End Developer", "Backend Developer", "Web Developer", "App Developer" ]'>
                   <span class="wrap"></span>
-              </h1>
-                <!-- <h1 class="home-heading" style="line-height: 1.5;">Front-End Developer, Backend Developer, Web Developer, App Developer</h1>  -->
+              </h1> -->
                 <p class="home-content">Managed Platform for High-Quality Development Projects for Startups.</p>
                 <button class="btn-startup">For Startups</button>
                 <button class="btn-student">For Students</button>
             </div>
-            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+           <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 <lottie-player src="https://assets6.lottiefiles.com/private_files/lf30_WdTEui.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop autoplay></lottie-player>
         </div>
       </div>
@@ -125,60 +127,60 @@
     <div class="row d-flex justify-content-center" style="margin-top: 4rem; margin-bottom: 4rem;">
       <div class="col-lg-6 col-md-6 d-flex justify-content-center">
         <div class="our-services-card" style="margin: .5rem;">
-          <img src="images/quarter-circle-blue.png" alt="" style="float: right;">
+          <img class="our-services-quarter-circle-image" src="images/quarter-circle-blue.png" alt="">
           <p class="our-services-card-heading">Web Development</p>
           <div class="our-services-sub-card wow animated pulse">
-            <p class="our-service-card-text">Front-End Developement</p>
-            <p class="our-service-card-text">Back-End Developement</p>
-            <p class="our-service-card-text">Database Management</p>
-            <p class="our-service-card-text">Wordpress Development</p>
+            <p class="our-service-card-text"><i class="fas fa-check"></i>Front-End Developement</p>
+            <p class="our-service-card-text"><i class="fas fa-check"></i>Back-End Developement</p>
+            <p class="our-service-card-text"><i class="fas fa-check"></i>Database Management</p>
+            <p class="our-service-card-text"><i class="fas fa-check"></i>Wordpress Development</p>
           </div>
         </div>
       </div>
       <div class="col-lg-6 col-md-6 d-flex justify-content-center">
         <div class="our-services-card" style="margin: .5rem;">
-          <img src="images/quarter-circle-green.png" alt="" style="float: right;">
+          <img class="our-services-quarter-circle-image" src="images/quarter-circle-green.png" alt="">
           <p class="our-services-card-heading">App Development</p>
           <div class="our-services-sub-card wow animated pulse">
-          <p class="our-service-card-text">Flutter App Development</p>
-          <p class="our-service-card-text">React Native App Development</p>
-          <p class="our-service-card-text">Android Development</p>
-          <p class="our-service-card-text">iOS Development</p>
+          <p class="our-service-card-text"><i class="fas fa-check"></i>Flutter App Development</p>
+          <p class="our-service-card-text"><i class="fas fa-check"></i>React Native App Development</p>
+          <p class="our-service-card-text"><i class="fas fa-check"></i>Android Development</p>
+          <p class="our-service-card-text"><i class="fas fa-check"></i>iOS Development</p>
           </div>
         </div>
       </div>
     </div>
     <div class="our-services-card-2">
-      <div class="row d-flex justify-content-center">
-        <div class="col-lg-2 col-md-2 d-flex justify-content-center">
-          <img class="service-img wow animated fadeInLeft" src="images/javascript.svg" alt="">
+      <div class="row no-gutters d-flex justify-content-center">
+        <div class="col-lg-2 col-md-3 col-sm-4 col-4">
+          <div class="service-img-1 wow animated fadeInLeft"></div>
         </div>
-        <div class="col-lg-2 col-md-2 d-flex justify-content-center">
-          <img class="service-img wow animated fadeInRight" src="images/html.svg" alt="">
+        <div class="col-lg-2 col-md-3 col-sm-4 col-4">
+          <div class="service-img-2 wow animated fadeInRight"></div>
         </div>
-        <div class="col-lg-2 col-md-2 d-flex justify-content-center">
-          <img class="service-img wow animated fadeInLeft" src="images/css.svg" alt="">
+        <div class="col-lg-2 col-md-3 col-sm-4 col-4">
+          <div class="service-img-3 wow animated fadeInLeft"></div>
         </div>
-        <div class="col-lg-2 col-md-2 d-flex justify-content-center">
-          <img class="service-img wow animated fadeInRight" src="images/python.svg" alt="">
+        <div class="col-lg-2 col-md-3 col-sm-4 col-4">
+          <div class="service-img-4 wow animated fadeInRight"></div>
         </div>
-        <div class="col-lg-2 col-md-2 d-flex justify-content-center">
-          <img class="service-img wow animated fadeInLeft" src="images/dart.svg" alt="">
+        <div class="col-lg-2 col-md-3 col-sm-4 col-4">
+          <div class="service-img-5 wow animated fadeInLeft"></div>
         </div>
-        <div class="col-lg-2 col-md-2 d-flex justify-content-center">
-          <img class="service-img wow animated fadeInRight" src="images/react.svg" alt="">
+        <div class="col-lg-2 col-md-3 col-sm-4 col-4">
+          <div class="service-img-6 wow animated fadeInRight"></div>
         </div>
-        <div class="col-lg-2 col-md-2 d-flex justify-content-center">
-          <img class="service-img wow animated fadeInLeft" src="images/dejango.svg" alt="">
+        <div class="col-lg-2 col-md-3 col-sm-4 col-4">
+          <div class="service-img-7 wow animated fadeInLeft"></div>
         </div>
-        <div class="col-lg-2 col-md-2 d-flex justify-content-center">
-          <img class="service-img wow animated fadeInRight" src="images/wordpress.svg" alt="">
+        <div class="col-lg-2 col-md-3 col-sm-4 col-4">
+          <div class="service-img-8 wow animated fadeInRight"></div>
         </div>
-        <div class="col-lg-2 col-md-2 d-flex justify-content-center">
-          <img class="service-img wow animated fadeInLeft" src="images/flutter.svg" alt="">
+        <div class="col-lg-2 col-md-3 col-sm-4 col-4">
+          <div class="service-img-9 wow animated fadeInLeft"></div>
         </div>
-        <div class="col-lg-2 col-md-2 d-flex justify-content-center">
-          <img class="service-img wow animated fadeInRight" src="images/node.png" alt="">
+        <div class="col-lg-2 col-md-3 col-sm-4 col-4">
+          <div class="service-img-10 wow animated fadeInRight"></div>
         </div>
   
       </div>
@@ -191,35 +193,36 @@
   <div style="text-align: center; background-color: #1E1515; padding-top: 4rem; padding-bottom: 6rem;">
       <h1 class="expect">What to expect when working with us?</h1>
       <p class="expect-message">We are customer-obsessed and strive to deliver cost and time efficient freelance experience</p>
-    <div class="row no-gutters d-flex justify-content-center" style="margin-top: 4rem;">
-      <div class="col-lg-4 col-md-6 d-flex justify-content-center wow animated fadeInRight">
-        <div class="expect-card">
-          <div class="expect-card-logo d-flex justify-content-center">
-            <img class="expect-card-image" src="images/managed-service.svg" alt="">
+      <div style="background-image:url('images/jefferson-santos-9SoCnyQmkzI-unsplash\ 1.png')">
+        <div class="d-flex justify-content-center">
+          <div class="expect-card">
+            <div class="d-flex justify-content-center">
+              <img class="expect-card-image" src="images/1.png" alt="">
+            </div>
+            <h1 class="expect-card-title">Managed Services</h1>
+            <p class="expect-card-content">We manage all your projects end to end. So, you don’t have to worry about the completion of your project</p>
           </div>
-          <h1 class="expect-card-title">Managed Services</h1>
-          <p class="expect-card-content">We manage all your projects end to end. So, you don’t have to worry about the completion of your project</p>
+        </div>
+        <div class="d-flex justify-content-center">
+          <div class="expect-card">
+            <div class="d-flex justify-content-center">
+              <img class="expect-card-image" src="images/2.png" alt="">
+            </div>
+            <h1 class="expect-card-title">Best Quality Work</h1>
+            <p class="expect-card-content">Our verified network of student freelancer and our quality check provides best quality work everytime</p>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center">
+          <div class="expect-card">
+            <div class="d-flex justify-content-center">
+              <img class="expect-card-image" src="images/3.png" alt="">
+            </div>
+            <h1 class="expect-card-title">Cost Efficient</h1>
+            <p class="expect-card-content">We ensure to deliever cost effiecient work to our clients leveraging the network of freelancers</p>
+          </div>
         </div>
       </div>
-      <div class="col-lg-4 col-md-6 d-flex justify-content-center wow animated tada">
-        <div class="expect-card">
-          <div class="expect-card-logo d-flex justify-content-center">
-            <img class="expect-card-image" src="images/best-quality-work.svg" alt="">
-          </div>
-          <h1 class="expect-card-title">Best Quality Work</h1>
-          <p class="expect-card-content">Our verified network of student freelancer and our quality check provides best quality work everytime</p>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 d-flex justify-content-center wow animated fadeInLeft">
-        <div class="expect-card">
-          <div class="expect-card-logo d-flex justify-content-center">
-            <img class="expect-card-image" src="images/cost-efficient.svg" alt="">
-          </div>
-          <h1 class="expect-card-title">Cost Efficient</h1>
-          <p class="expect-card-content">We ensure to deliever cost effiecient work to our clients leveraging the network of freelancers</p>
-        </div>
-      </div>
-    </div>
+      
   </div>
 </section>
 
@@ -235,20 +238,64 @@
         <ul id="testim-dots" class="dots">
             <li class="dot active"></li>
             <li class="dot"></li>
-            
+            <li class="dot"></li>
+            <li class="dot"></li>
+            <li class="dot"></li>
         </ul>
         <div id="testim-content" class="cont">
             
             <div class="active">
-              <h2>CEO, FarmTap</h2>
-              <p>Ryze is a great concept for the student freelancers and newly startups. I'm the CEO of FarmTap, I want a website to be made and my budget was not that much which the professional freelancers were demanding on Upwork and Fiverr. Ryze solved my problem so easily by building a great website as per my requirement and that too within my budget. Looking forward to more projects with Ryze.</p>                    
-          </div>
-
-          <div>
-              <h2>Founder, EduTekzila</h2>
-              <p>Too good platform for small startups like us. Really cost efficient and best quality work.</p>                    
-          </div>
-
+                
+                <p><i class="fas fa-quote-left mr-4"></i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                <div class="img"><img src="https://image.ibb.co/hgy1M7/5a6f718346a28820008b4611_750_562.jpg" alt="">
+                  <div>
+                    <h2>Mr. Lorem Ipsum</h2>
+                    <p>consectetur adipiscing elit, sed do eiusmod</p>
+                  </div>
+                </div> 
+                                 
+            </div>
+  
+            <div>
+                <p><i class="fas fa-quote-left mr-4"></i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                <div class="img"><img src="https://image.ibb.co/cNP817/pexels_photo_220453.jpg" alt="">
+                  <div>
+                    <h2>Mr. Lorem Ipsum</h2>
+                    <p>consectetur adipiscing elit, sed do eiusmod</p>
+                  </div>
+                </div>                  
+            </div>
+  
+            <div>
+                <p><i class="fas fa-quote-left mr-4"></i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                <div class="img"><img src="https://image.ibb.co/iN3qES/pexels_photo_324658.jpg" alt="">
+                  <div>
+                    <h2>Mr. Lorem Ipsum</h2>
+                    <p>consectetur adipiscing elit, sed do eiusmod</p>
+                  </div>
+                </div>                   
+            </div>
+  
+            <div>
+                <p><i class="fas fa-quote-left mr-4"></i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                <div class="img"><img src="https://image.ibb.co/kL6AES/Top_SA_Nicky_Oppenheimer.jpg" alt="">
+                  <div>
+                    <h2>Mr. Lorem Ipsum</h2>
+                    <p>consectetur adipiscing elit, sed do eiusmod</p>
+                  </div>
+                </div>                    
+            </div>
+  
+            <div>
+                <p><i class="fas fa-quote-left mr-4"></i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                <div class="img"><img src="https://image.ibb.co/gUPag7/image.jpg" alt="">
+                  <div>
+                    <h2>Mr. Lorem Ipsum</h2>
+                    <p>consectetur adipiscing elit, sed do eiusmod</p>
+                  </div>
+                </div>                    
+            </div>
+  
         </div>
   
     </div>
@@ -261,16 +308,16 @@
       </section>
 
       <section id="contact">
-        <div class="contact-container">
+        <div class="contact-container container">
           <h1 class="contact-heading">Looking for Freelancer?</h1>
           <p class="contact-content">We want to change how freelancing is percieved. Be a part of this journey.</p>
-          <div class="row no-gutters">
+          <div class="row no-gutters container">
             <div class="col-lg-6 col-md-6 wow animated zoomIn">
               <form action="index.html" style="margin-top: 60px">
-                <input class="input-box" type="text" name="Name" placeholder="Full Name"><br>
-                <input class="input-box" type="text" name="Company" placeholder="Company Name"><br>
-                <input class="input-box" type="email" name="Email" placeholder="Email Address"><br>
-                <input class="input-box" type="number" name="Mobile" placeholder="Mobile Nmber"><br>
+                <input class="input-box form-control" type="text" name="Name" placeholder="Full Name"><br>
+                <input class="input-box form-control" type="text" name="Company" placeholder="Company Name"><br>
+                <input class="input-box form-control" type="email" name="Email" placeholder="Email Address"><br>
+                <input class="input-box form-control" type="number" name="Mobile" placeholder="Mobile Nmber"><br>
                 <button type="submit" class="contact-btn">Submit</button>
               </form>
             </div>
